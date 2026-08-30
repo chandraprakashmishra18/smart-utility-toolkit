@@ -1,5 +1,4 @@
 // Basic HTTP server using the http core module
- 
 var http = require("http");
  
 var server = http.createServer(function (req, res) {
