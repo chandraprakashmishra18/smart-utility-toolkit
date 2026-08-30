@@ -21,7 +21,6 @@ if (operation === "add") {
   console.log("Invalid operation! Use add, sub, mul or div");
   result = undefined;
 }
- 
 if (result !== undefined) {
   console.log("Result:", result);
 }
