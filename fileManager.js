@@ -1,6 +1,8 @@
 // File manager using the fs core module (Create, Read, Update, Delete)
+
 var fs = require("fs");
 var fileName = "test.txt";
+
 // 1. Create File
 console.log("Creating File...");
 fs.writeFile(fileName, "Hello Node.js", function (err) {
@@ -9,6 +11,7 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
     return;
   }
   console.log("File Created");
+
   // 2. Read File
   console.log("Reading File");
   fs.readFile(fileName, "utf8", function (err, data) {
