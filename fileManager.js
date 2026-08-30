@@ -9,7 +9,6 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
     return;
   }
   console.log("File Created");
- 
   // 2. Read File
   console.log("Reading File");
   fs.readFile(fileName, "utf8", function (err, data) {
@@ -18,7 +17,6 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
       return;
     }
     console.log(data);
- 
     // 3. Update File (append text)
     fs.appendFile(fileName, "\nLearning FS Module", function (err) {
       if (err) {
