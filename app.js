@@ -8,6 +8,5 @@ for (var i = 1; i <= 5; i++) {
     console.log(i + " is Odd");
   }
 }
- 
 logger("Finished checking numbers");
  
