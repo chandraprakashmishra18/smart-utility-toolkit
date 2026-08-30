@@ -20,7 +20,7 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
       return;
     }
     console.log(data);
-    
+
     // 3. Update File (append text)
     fs.appendFile(fileName, "\nLearning FS Module", function (err) {
       if (err) {
@@ -28,6 +28,7 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
         return;
       }
       console.log("File Updated");
+
       // Read again to show updated content
       fs.readFile(fileName, "utf8", function (err, data) {
         if (err) {
@@ -35,6 +36,7 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
           return;
         }
         console.log(data);
+        
         // 4. Delete File
         fs.unlink(fileName, function (err) {
           if (err) {
