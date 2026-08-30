@@ -16,7 +16,6 @@ var server = http.createServer(function (req, res) {
     res.end("404 - Page Not Found");
   }
 });
- 
 var PORT = 3000;
 server.listen(PORT, function () {
   console.log("Server running at http://localhost:" + PORT);
