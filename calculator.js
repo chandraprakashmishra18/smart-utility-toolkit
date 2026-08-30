@@ -1,7 +1,9 @@
 var args = process.argv;
+
 var operation = args[2];
 var num1 = Number(args[3]);
 var num2 = Number(args[4]);
+
 var result;
  
 if (operation === "add") {
