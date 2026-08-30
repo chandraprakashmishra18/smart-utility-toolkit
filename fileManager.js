@@ -20,6 +20,7 @@ fs.writeFile(fileName, "Hello Node.js", function (err) {
       return;
     }
     console.log(data);
+    
     // 3. Update File (append text)
     fs.appendFile(fileName, "\nLearning FS Module", function (err) {
       if (err) {
